@@ -9,7 +9,8 @@ depends=('mpv')
 conflicts=("wiliwili-git")
 source=("https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/wiliwili.tar.gz" "https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/wiliwili.desktop" "https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/resources.tar.gz")
 sha256sums=('3684c3158caba48d2047d1983530fb1f3a940b37dce7e735d460d582cd860590'
-            '63fe4482e054d670450d27a9928c7f5682d6975370e629583ba6d279798f6303')
+            '63fe4482e054d670450d27a9928c7f5682d6975370e629583ba6d279798f6303'
+            '4bfcf70e927004d47a567e1e6b13fda2e8104f8cedbe0a83694971a4537519b8')
 prepare() {
   cd ${srcdir}
   tar xpvf wiliwili.tar.gz -C "$srcdir"
