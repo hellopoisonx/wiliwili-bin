@@ -1,0 +1,6 @@
+[Desktop Entry]
+Version=0.6.0
+Terminal=False
+Type=Application
+Name=wiliwili
+Exec=/usr/bin/wiliwili
