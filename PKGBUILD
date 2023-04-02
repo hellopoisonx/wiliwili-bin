@@ -11,7 +11,7 @@ depends=('mpv')
 conflicts=("wiliwili-git")
 source=("https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/wiliwili.tar.gz" "https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/wiliwili.desktop" "https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/resources.tar.gz")
 sha256sums=('3684c3158caba48d2047d1983530fb1f3a940b37dce7e735d460d582cd860590'
-            '63fe4482e054d670450d27a9928c7f5682d6975370e629583ba6d279798f6303'
+            '15016548249a3eaed1ae302aabdfe13ba7fbf91d531cad2c5b1aa9f780a91c0a'
             '4bfcf70e927004d47a567e1e6b13fda2e8104f8cedbe0a83694971a4537519b8')
 prepare() {
   cd ${srcdir}
@@ -28,5 +28,5 @@ package() {
   install -Dm755 "wiliwili" "${pkgdir}/usr/bin/wiliwili"
   #Desktop file
   install -Dm755 "wiliwili.desktop" -t "$pkgdir/usr/share/applications/wiliwili.desktop" 
-  install -Dm644 "resources/icon/cn.xfangfang.wiliwili.png" -t "$pkgdir/usr/share/icons/hicolor/scalable/apps/"
+  install -Dm644 "${srcdir}/resources/icon/wiliwili.ico"-t "$pkgdir/usr/share/icons/hicolor/scalable/apps/"
 }
