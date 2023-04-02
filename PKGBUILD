@@ -1,3 +1,5 @@
+# Maintainer: hellopoisonx <1665341912@qq.com>
+# Contributor: hellopoisonx <1665341912@qq.com>
 pkgname=wiliwili-bin
 pkgver=0.6.0
 pkgrel=1
