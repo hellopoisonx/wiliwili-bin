@@ -7,8 +7,7 @@ url="https://github.com/xfangfang/wiliwili"
 license=("GPL3")
 depends=('mpv')
 conflicts=("wiliwili-git")
-source=("https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/wiliwili", "https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/wiliwili.desktop")
-
+source=("https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/wiliwili.tar.gz", "https://gitee.com/hellopoisonx/aur-wiliwili-bin/raw/master/wiliwili.desktop")
 package() {
   cd ${srcdir}
   #install the binary file
