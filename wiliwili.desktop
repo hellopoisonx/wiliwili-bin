@@ -3,4 +3,5 @@ Version=0.6.0
 Terminal=False
 Type=Application
 Name=wiliwili
+Icon=/usr/share/icons/hicolor/scalable/apps/cn.xfangfang.wiliwili.png
 Exec=/usr/bin/wiliwili
