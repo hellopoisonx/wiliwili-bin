@@ -28,4 +28,5 @@ package() {
   install -Dm755 "wiliwili" "${pkgdir}/usr/bin/wiliwili"
   #Desktop file
   install -Dm755 "wiliwili.desktop" -t "$pkgdir/usr/share/applications/wiliwili.desktop" 
+  install -Dm644 "resources/icon/cn.xfangfang.wiliwili.png" -t "$pkgdir/usr/share/icons/hicolor/scalable/apps/"
 }
