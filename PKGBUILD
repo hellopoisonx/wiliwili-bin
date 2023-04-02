@@ -19,8 +19,9 @@ prepare() {
 
 package() {
   cd ${srcdir}
+  mkdir -p "${pkgdir}/usr/share/wiliwili"
   #resources
-  cp -dr --no-preserve=ownership "resources/" "$pkgdir/usr/share/wiliwili"
+  cp -r  "${srcdir}/resources" "${pkgdir}/usr/share/wiliwili/"
   #install the binary file
   install -Dm755 "wiliwili" "${pkgdir}/usr/bin/wiliwili"
   #Desktop file
